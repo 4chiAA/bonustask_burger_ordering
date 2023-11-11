@@ -34,6 +34,17 @@ class OrderSystemTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void getOrderById_whenMenuIdIs101_getMenuValueOfId101(){
+        // GIVEN
+        Menu expected = new Menu("Beef Burger Menu", 17, "Double Trouble", "Homestyle Fries", "Fanta");
+        // WHEN
+        OrderSystem.addMenu("101", expected);
+        Menu actual = OrderSystem.getOrderById("101");
+        // THEN
+        assertEquals(expected, actual);
+    }
+
 
     // GIVEN
     // WHEN

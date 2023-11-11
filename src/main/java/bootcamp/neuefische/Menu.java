@@ -12,7 +12,6 @@ public class Menu {
 
     }
 
-
     public Menu(String name, int price, String mainDish, String sideDish, String beverage) {
         this.name = name;
         this.price = price;
@@ -21,5 +20,33 @@ public class Menu {
         this.beverage = beverage;
     }
 
+    @Override
+    public String toString() {
+        return  name + '\'' +
+                ", price=" + price +
+                ", mainDish='" + mainDish + '\'' +
+                ", sideDish='" + sideDish + '\'' +
+                ", beverage='" + beverage + '\'' +
+                '}';
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public String getMainDish() {
+        return mainDish;
+    }
+
+    public String getSideDish() {
+        return sideDish;
+    }
+
+    public String getBeverage() {
+        return beverage;
+    }
 }
